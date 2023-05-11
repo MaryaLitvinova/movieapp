@@ -1,0 +1,8 @@
+.cardList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  padding: 0px;
+}

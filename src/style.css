@@ -1,0 +1,33 @@
+#root {
+  width: 1010px;
+  min-height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.ant-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.loader-spinner {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+body {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0px;
+  margin-top: 0;
+  margin-left: 17px;
+  margin-right: 0px;
+}
+html {
+  overflow-y: scroll;
+}
