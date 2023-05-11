@@ -1,0 +1,136 @@
+.card {
+  width: 450px;
+  overflow: hidden;
+  display: flex;
+  margin: 1em;
+  transition-duration: 0.5s;
+  box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 10%);
+}
+
+.poster {
+  box-sizing: border-box;
+  max-width: 200px;
+  max-height: 300px;
+  transition-duration: 0.5s;
+}
+
+.poster:hover {
+  transition-duration: 0.3s;
+  opacity: 90%;
+  cursor: pointer;
+}
+
+:where(.css-dev-only-do-not-override-1jyprxx).ant-image .ant-image-img {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+.title {
+  font-size: 17px;
+  max-width: 180px;
+}
+
+.title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.data-of-release {
+  color: #827e7e;
+  margin-bottom: 8px;
+  font-size: 12px;
+  cursor: default;
+}
+
+.genre-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 0px 10px 0px;
+}
+
+.genre-item {
+  padding: 1px 3px 2px 5px;
+  margin-right: 3px;
+  background: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  height: 281px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -16px;
+  position: relative;
+  width: 65%;
+  padding-top: 1em;
+}
+
+.reiting {
+  position: absolute;
+  top: 25px;
+  left: 188px;
+  border: 2px solid;
+  border-radius: 50%;
+  height: 30px;
+  min-width: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.overview {
+  font-size: 12px;
+  cursor: default;
+}
+@media (max-width: 500px) {
+  .card {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-info {
+    width: 100%;
+    margin-right: 20px;
+    align-items: center;
+  }
+  .title {
+    padding-top: 10px;
+  }
+
+  .overview {
+    margin: 10px 20px 0 20px;
+  }
+
+  .reiting {
+    position: relative;
+    top: -8px;
+    left: auto;
+  }
+
+  .title {
+    max-width: 80%;
+  }
+
+  .ant-rate {
+    margin-bottom: 5px;
+  }
+}
+
+/* @media (max-width: 1044px) {
+  .card {
+    width: auto;
+    margin-right: 25px;
+  }
+} */
